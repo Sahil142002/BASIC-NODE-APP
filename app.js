@@ -14,13 +14,13 @@ app.get("/", (req, res) => {
 
 app.get("/health", (req, res) => {
     console.log("Health check hit");
-    res.json({ status: "ok" });
+    res.json({ status: "health is ok" });
 });
 
 app.get("/hello", (req, res) => {
     console.log("Hello endpoint hit");
     console.log(`IP : ${req.headers["x-forwarded-for"] || req.socket.remoteAddress}`);
-    res.json({ message: "Hello, World!" });
+    res.json({ message: "Hello, Sahil!" });
 });
 
 app.listen(PORT, () => {
