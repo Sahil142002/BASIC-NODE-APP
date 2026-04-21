@@ -9,12 +9,12 @@ app.use(morgan("dev"));
 
 app.get("/", (req, res) => {
     console.log("App is running...");
-    res.json({ status: "App is running on port 3000" });
+    res.json({ status: "App is running continuosly on port 3000" });
 });
 
 app.get("/health", (req, res) => {
     console.log("Health check hit");
-    res.json({ status: "health is ok" });
+    res.json({ status: "health is perfectly ok" });
 });
 
 app.get("/hello", (req, res) => {
